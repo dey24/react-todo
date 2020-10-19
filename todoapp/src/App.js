@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Todos from './Todos';
-
+import AddTodo from './AddForm';
 class App extends Component{
   state = {
     todos: [
@@ -21,6 +21,7 @@ class App extends Component{
       <div className="todo-app container">
         <h1 className="center blue-text">Todos</h1>
         <Todos todos={this.state.todos} deleteTodo= {this.deleteTodo}/>
+        <AddTodo />
       </div>
     );
   }
